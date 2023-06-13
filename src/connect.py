@@ -9,7 +9,7 @@ db.cluster.pin_cluster(
     "0531-100622-mon30k1x",
     headers=None,
 )
-db.jobs.list_jobs(
+jobs_list = db.jobs.list_jobs(
     job_type=None,
     expand_tasks=None,
     limit=None,
@@ -17,6 +17,12 @@ db.jobs.list_jobs(
     headers=None,
     version=None,
 )
+print("Job name:- Job ID")
+
+for jobs in jobs_list['jobs']:
+  print(f"{job['name']}: {job['job_id']}")
+
+
 clusters_list = db.cluster.list_clusters(headers=None)
 print("Cluster name, cluster ID")
 
