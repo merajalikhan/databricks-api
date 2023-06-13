@@ -23,6 +23,6 @@ runs:
       shell: bash   
     - name: Run Python script
       id: get-square
-      run: python src/get_num_square.py
+      run: python src/connect.py
       shell: bash
       
