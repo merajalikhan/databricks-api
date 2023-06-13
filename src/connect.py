@@ -20,7 +20,7 @@ jobs_list = db.jobs.list_jobs(
 print("Job name:- Job ID")
 
 for job in jobs_list['jobs']:
-  print(f"{job['job_name']}: {job['job_id']}")
+  print(f"{job['job_type']}: {job['job_id']}")
   # print(f"{job['job_id']}")
 
 
