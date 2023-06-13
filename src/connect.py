@@ -17,3 +17,8 @@ db.jobs.list_jobs(
     headers=None,
     version=None,
 )
+clusters_list = db.cluster.list_clusters(headers=None)
+print("Cluster name, cluster ID")
+
+for cluster in clusters_list['clusters']:
+  print(f"{cluster['cluster_name']}, {cluster['cluster_id']}")
