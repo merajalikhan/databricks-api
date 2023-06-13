@@ -16,7 +16,7 @@ for job in jobs_list['jobs']:
   #print(f"{job.settings['job_name']}: {job['job_id']}")
    print(f"{job['job_id']}")
 
-db.jobs.run_now(
+db.jobs.run_now()
     job_id="60062762225560"
 
 
