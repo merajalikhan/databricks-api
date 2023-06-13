@@ -20,7 +20,7 @@ for job in jobs_list['jobs']:
     headers=None,
     version=None,
     ) 
-    print(f"{job['job_id']} DELETED")
+   print(f"{job['job_id']} DELETED")
 
 #db.jobs.run_now(
 #    job_id="60062762225560"
