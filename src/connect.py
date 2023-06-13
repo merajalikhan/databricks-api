@@ -2,8 +2,8 @@ from databricks_api import DatabricksAPI
 
 # Provide a host and token
 db = DatabricksAPI(
-    host="https://adb-7772147484121042.2.azuredatabricks.net",
-    token="dapif71015e730f71f5e672c5dac3024d8ec"
+    host="https://adb-1710922579126448.8.azuredatabricks.net",
+    token="dapid24a84b27054a5fccabc962278928be0-3"
 )
 db.cluster.pin_cluster(
     "0531-100622-mon30k1x",
