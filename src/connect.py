@@ -15,7 +15,7 @@ print("Job name:- Job ID")
 for job in jobs_list['jobs']:
   #print(f"{job['job_type']}: {job['job_id']}")
    print(f"{job['job_id']}")
-   print(f"{job['job_type']}") 
+   print(f"{job['creator_user_name']}") 
 
 
 clusters_list = db.cluster.list_clusters(headers=None)
