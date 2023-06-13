@@ -5,10 +5,10 @@ db = DatabricksAPI(
     host="https://adb-1710922579126448.8.azuredatabricks.net",
     token="dapid24a84b27054a5fccabc962278928be0-3"
 )
-db.cluster.pin_cluster(
-    "0531-100622-mon30k1x",
-    headers=None,
-)
+#db.cluster.pin_cluster(
+#    "0531-100622-mon30k1x",
+#    headers=None,
+#)
 jobs_list = db.jobs.list_jobs()
 print("Job ID")
 
