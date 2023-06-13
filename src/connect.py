@@ -20,7 +20,8 @@ jobs_list = db.jobs.list_jobs(
 print("Job name:- Job ID")
 
 for job in jobs_list['jobs']:
-  print(f"{job['name']}: {job['job_id']}")
+  #print(f"{job['name']}: {job['job_id']}")
+   print(f"{job['job_id']}")
 
 
 clusters_list = db.cluster.list_clusters(headers=None)
